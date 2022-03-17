@@ -1,17 +1,16 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
-  --font-code: 'Roboto', monospace;
+  --font-primary: 'VT323', sans-serif;
+  --font-code: 'VT323', monospace;
   --bg-color: #00163f;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --accent-color: #cf2e33;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -23,6 +22,8 @@
 
 body {
   background-color: var(--bg-color);
+  background-image: url("../images/bg_stars.jpg");
+  background-repeat: repeat;
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -90,7 +91,12 @@ header .container {
   font-size: 1.2rem;
   padding: 1.5rem 3rem;
 }
-
+section.container
+{
+  background-image: url("../images/Unrevealed Pixi.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 /* COUNTDOWN SECTION */
 
 section {
@@ -115,7 +121,7 @@ section {
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color);
+  background: #cf2e33;
   color: var(--font-color);
   font-size: 2rem;
   font-weight: 700;
